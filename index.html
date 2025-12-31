@@ -6,89 +6,113 @@
 <title>Ashok Swami | Assistant Manager – Machine Maintenance</title>
 
 <style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background: #f4f6f9;
-    color: #333;
+body{
+    margin:0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
 }
 
-header {
-    background: #0a2540;
-    color: white;
-    padding: 35px 20px;
-    text-align: center;
+.container{
+    max-width:1200px;
+    margin:auto;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid white;
-    object-fit: cover;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+/* HEADER */
+header{
+    background:#0a2540;
+    color:white;
+    padding:40px 20px;
+}
+.header-flex{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+}
+.header-left{
+    max-width:700px;
+}
+header h1{
+    margin:0;
+    font-size:38px;
+}
+header h3{
+    margin:10px 0;
+    font-weight:400;
+    color:#cfd8e3;
+}
+header p{
+    margin:6px 0;
 }
 
-header h1 {
-    margin: 5px 0;
-    font-size: 32px;
+.header-right img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:4px solid white;
+    object-fit:cover;
 }
 
-header p {
-    margin: 5px 0;
-    font-size: 16px;
+/* BUTTONS */
+.buttons{
+    margin-top:15px;
+}
+.buttons a{
+    display:inline-block;
+    margin:6px 6px 0 0;
+    padding:10px 18px;
+    background:white;
+    color:#0a2540;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:600;
+}
+.buttons a:hover{
+    background:#e6ecf3;
 }
 
-.buttons a {
-    display: inline-block;
-    margin: 8px;
-    padding: 10px 18px;
-    background: white;
-    color: #0a2540;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+/* SECTIONS */
+section{
+    background:white;
+    margin:25px 0;
+    padding:30px;
+    border-radius:8px;
+}
+section h2{
+    margin-top:0;
+    color:#0a2540;
+    border-bottom:2px solid #0a2540;
+    padding-bottom:8px;
 }
 
-.buttons a:hover {
-    background: #e6ecf3;
+ul{
+    padding-left:20px;
+}
+li{
+    margin-bottom:8px;
 }
 
-section {
-    padding: 30px 20px;
-    max-width: 1000px;
-    margin: auto;
-    background: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
+/* SKILLS */
+.skills span{
+    display:inline-block;
+    background:#e8edf3;
+    color:#0a2540;
+    padding:8px 12px;
+    margin:6px;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:500;
 }
 
-h2 {
-    border-left: 5px solid #0a2540;
-    padding-left: 10px;
-    color: #0a2540;
-}
-
-.skills span {
-    display: inline-block;
-    background: #e6ecf3;
-    padding: 8px 12px;
-    margin: 6px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.job-title {
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-footer {
-    background: #0a2540;
-    color: white;
-    text-align: center;
-    padding: 15px;
+/* FOOTER */
+footer{
+    background:#0a2540;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:30px;
 }
 </style>
 </head>
@@ -96,81 +120,139 @@ footer {
 <body>
 
 <header>
-    <!-- PROFILE PHOTO -->
-    <img src="profile.jpg" alt="Ashok Swami">
+<div class="container header-flex">
 
+<div class="header-left">
     <h1>Ashok Swami</h1>
-    <p>Assistant Manager – Machine Repair & Maintenance (Engineering)</p>
-    <p>📍 Rewari, Haryana | 📞 +91-8130330600 | 📧 Ashokkumarswami1988@gmail.com</p>
+    <h3>Assistant Manager – Machine Repair & Maintenance (Engineering)</h3>
+    <p>📍 Rewari, Haryana, India</p>
+    <p>📞 +91-8130330600 | 📧 Ashokkumarswami1988@gmail.com</p>
 
-    <!-- ACTION BUTTONS -->
     <div class="buttons">
         <a href="https://wa.me/918130330600" target="_blank">WhatsApp</a>
         <a href="https://www.linkedin.com/in/ashok-kumar-a41386285" target="_blank">LinkedIn</a>
         <a href="Ashok_Swami_Resume.pdf" target="_blank">View Resume</a>
         <a href="Ashok_Swami_Resume.pdf" download>Download Resume</a>
     </div>
+</div>
+
+<div class="header-right">
+    <img src="profile.jpg" alt="Ashok Swami">
+</div>
+
+</div>
 </header>
 
+<div class="container">
+
 <section>
-    <h2>Professional Summary</h2>
-    <p>
-        Assistant Manager – Engineering with 9+ years of experience in machine repair,
-        preventive & corrective maintenance, and high-volume electronics manufacturing.
-        Expert in TPM, KAIZEN, RCA, CAPA, MTTR, MTBF, FPY improvement, and leading
-        maintenance teams for stable production.
-    </p>
+<h2>Professional Summary</h2>
+<p>
+Accomplished Assistant Manager – Engineering with over <strong>9+ years</strong> of
+hands-on experience in machine repair, preventive & corrective maintenance,
+and high-volume electronics manufacturing environments.
+Expert in leading maintenance teams, handling critical breakdowns,
+improving equipment uptime, and implementing continuous improvement
+methodologies such as <strong>TPM, KAIZEN, RCA, CAPA</strong>.
+</p>
 </section>
 
 <section>
-    <h2>Core Skills</h2>
-    <div class="skills">
-        <span>Machine Repair & Troubleshooting</span>
-        <span>Preventive / Predictive Maintenance (TPM)</span>
-        <span>PLC Programming</span>
-        <span>Electrical Troubleshooting</span>
-        <span>Machine Modification</span>
-        <span>MTTR / MTBF / FPY</span>
-        <span>Root Cause Analysis</span>
-        <span>CAPA</span>
-        <span>KAIZEN</span>
-        <span>POKA-YOKE</span>
-        <span>5S & Safety</span>
-    </div>
+<h2>Core Skills & Technical Competencies</h2>
+<div class="skills">
+<span>Machine Repair & Advanced Troubleshooting</span>
+<span>Preventive / Predictive / Corrective Maintenance (TPM)</span>
+<span>Maintenance Team Leadership</span>
+<span>PLC Programming</span>
+<span>Electrical Troubleshooting</span>
+<span>Machine Modification</span>
+<span>MTTR / MTBF / FPY Improvement</span>
+<span>Root Cause Analysis (Why-Why, Fishbone)</span>
+<span>CAPA Implementation</span>
+<span>KAIZEN & POKA-YOKE</span>
+<span>5S, Safety & SOP Compliance</span>
+<span>Spare Parts Planning & Cost Control</span>
+</div>
 </section>
 
 <section>
-    <h2>Professional Experience</h2>
+<h2>Professional Experience</h2>
 
-    <p class="job-title">DBG Technology (I) Pvt. Ltd.</p>
-    <ul>
-        <li>Leading machine repair & maintenance operations</li>
-        <li>Handling critical breakdowns and RCA</li>
-        <li>Machine modification & automation improvement</li>
-        <li>MTTR, MTBF, FPY monitoring</li>
-        <li>Supporting customer & internal audits</li>
-    </ul>
+<h3>DBG Technology (I) Pvt. Ltd. – Electronics Manufacturing</h3>
+<p><strong>Assistant Manager – Machine Repair & Maintenance (July 2025 – Present)</strong></p>
+<ul>
+<li>Leading overall machine repair and maintenance operations for assembly, glue dispensing, CCD, BTB and tester lines</li>
+<li>Managing and mentoring multi-skilled maintenance teams with effective shift planning</li>
+<li>Driving preventive maintenance strategies to improve equipment reliability and uptime</li>
+<li>Monitoring daily MTTR, MTBF, FPY and downtime trends</li>
+<li>Conducting in-depth root cause analysis and implementing permanent corrective actions</li>
+<li>Handling machine modifications, PLC changes and safety interlocks</li>
+<li>Supporting customer audits, internal audits and process reviews</li>
+</ul>
 
-    <p class="job-title">Samsung Electronics Pvt. Ltd. – Service Engineer</p>
-    <ul>
-        <li>PCBA & electronic repair up to L4 level</li>
-        <li>Component-level fault analysis</li>
-        <li>Audit and quality support</li>
-    </ul>
+<p><strong>Senior Engineer – Machine Repair (June 2018 – June 2025)</strong></p>
+<ul>
+<li>Handled complex breakdowns during high-volume mass production</li>
+<li>Executed preventive and corrective maintenance activities</li>
+<li>Improved FPY, reduced rejection and controlled CTQ parameters</li>
+<li>Implemented KAIZEN and POKA-YOKE solutions</li>
+<li>Prepared daily, weekly and monthly machine performance reports</li>
+</ul>
+
+<p><strong>Engineer – Machine Repair (March 2016 – May 2018)</strong></p>
+<ul>
+<li>Provided hands-on troubleshooting support to assembly and testing lines</li>
+<li>Supported preventive maintenance execution and equipment validation</li>
+<li>Maintained detailed breakdown history and maintenance documentation</li>
+</ul>
+
+<h3>Samsung Electronics Pvt. Ltd.</h3>
+<p><strong>Service Engineer – Machine & PCBA Repair (2014 – 2016)</strong></p>
+<ul>
+<li>Diagnosed and repaired PCBA assemblies up to L4 level</li>
+<li>Performed component-level fault analysis</li>
+<li>Improved repair turnaround time through systematic troubleshooting</li>
+<li>Supported customer and internal quality audits</li>
+</ul>
+
 </section>
 
 <section>
-    <h2>Education</h2>
-    <ul>
-        <li>Diploma – Electronics & Telecommunication Engineering</li>
-        <li>Diploma – Mobile Engineering</li>
-        <li>12th & 10th – BSEH</li>
-    </ul>
+<h2>Machine & Technical Expertise</h2>
+<ul>
+<li>Glue Dispensing Machines</li>
+<li>CCD & CCD Screw Machines</li>
+<li>BTB Machines</li>
+<li>Screw & Three-in-One Machines</li>
+<li>Air Tightness Testers</li>
+<li>Assembly & Testing Automation Equipment</li>
+<li>Jigs & Fixtures – Installation, Alignment & Modification</li>
+</ul>
 </section>
+
+<section>
+<h2>Education</h2>
+<ul>
+<li>Diploma – Electronics & Telecommunication Engineering (Delhi)</li>
+<li>Diploma – Mobile Engineering (Gurgaon)</li>
+<li>12th & 10th – Board of School Education Haryana</li>
+</ul>
+</section>
+
+<section>
+<h2>Personal Details</h2>
+<ul>
+<li>Date of Birth: 01 March 1988</li>
+<li>Languages: English, Hindi</li>
+<li>Nationality: Indian</li>
+</ul>
+</section>
+
+</div>
 
 <footer>
-    © 2025 Ashok Swami | Engineering Maintenance Professional
+© 2025 Ashok Swami | Engineering Maintenance Professional
 </footer>
 
 </body>
-</html>
+    </html>
