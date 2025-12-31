@@ -6,26 +6,26 @@
 <title>Ashok Swami | Assistant Manager – Machine Maintenance</title>
 
 <style>
+*{
+    box-sizing:border-box;
+}
 body{
     margin:0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background:#f5f7fa;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
     color:#333;
     line-height:1.6;
 }
 
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-/* HEADER */
+/* ===== HEADER ===== */
 header{
     background:#0a2540;
-    color:white;
+    color:#fff;
     padding:40px 20px;
 }
-.header-flex{
+.header-container{
+    max-width:1200px;
+    margin:auto;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
@@ -34,25 +34,29 @@ header{
 .header-left{
     max-width:700px;
 }
-header h1{
+.header-left h1{
     margin:0;
     font-size:38px;
 }
-header h3{
+.header-left h3{
     margin:10px 0;
     font-weight:400;
     color:#cfd8e3;
 }
-header p{
+.header-left p{
     margin:6px 0;
 }
 
+.header-right{
+    text-align:center;
+}
 .header-right img{
-    width:170px;
-    height:170px;
+    width:180px;
+    height:180px;
     border-radius:50%;
-    border:4px solid white;
+    border:4px solid #ffffff;
     object-fit:cover;
+    background:#ffffff;
 }
 
 /* BUTTONS */
@@ -63,19 +67,25 @@ header p{
     display:inline-block;
     margin:6px 6px 0 0;
     padding:10px 18px;
-    background:white;
+    background:#ffffff;
     color:#0a2540;
     text-decoration:none;
     border-radius:4px;
-    font-weight:600;
+    font-weight:bold;
 }
 .buttons a:hover{
     background:#e6ecf3;
 }
 
-/* SECTIONS */
+/* ===== CONTENT ===== */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
 section{
-    background:white;
+    background:#ffffff;
     margin:25px 0;
     padding:30px;
     border-radius:8px;
@@ -109,51 +119,62 @@ li{
 /* FOOTER */
 footer{
     background:#0a2540;
-    color:white;
+    color:#ffffff;
     text-align:center;
     padding:18px;
     margin-top:30px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .header-container{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+    .header-left{
+        max-width:100%;
+    }
 }
 </style>
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
-<div class="container header-flex">
+<div class="header-container">
 
-<div class="header-left">
-    <h1>Ashok Swami</h1>
-    <h3>Assistant Manager – Machine Repair & Maintenance (Engineering)</h3>
-    <p>📍 Rewari, Haryana, India</p>
-    <p>📞 +91-8130330600 | 📧 Ashokkumarswami1988@gmail.com</p>
+    <div class="header-left">
+        <h1>Ashok Swami</h1>
+        <h3>Assistant Manager – Machine Repair & Maintenance (Engineering)</h3>
+        <p>📍 Rewari, Haryana, India</p>
+        <p>📞 +91-8130330600 | 📧 Ashokkumarswami1988@gmail.com</p>
 
-    <div class="buttons">
-        <a href="https://wa.me/918130330600" target="_blank">WhatsApp</a>
-        <a href="https://www.linkedin.com/in/ashok-kumar-a41386285" target="_blank">LinkedIn</a>
-        <a href="Ashok_Swami_Resume.pdf" target="_blank">View Resume</a>
-        <a href="Ashok_Swami_Resume.pdf" download>Download Resume</a>
+        <div class="buttons">
+            <a href="https://wa.me/918130330600" target="_blank">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/ashok-kumar-a41386285" target="_blank">LinkedIn</a>
+            <a href="Ashok_Swami_Resume.pdf" target="_blank">View Resume</a>
+            <a href="Ashok_Swami_Resume.pdf" download>Download Resume</a>
+        </div>
     </div>
-</div>
 
-<div class="header-right">
-    <img src="profile.jpg" alt="Ashok Swami">
-</div>
+    <div class="header-right">
+        <img src="profile.jpg" alt="Ashok Swami">
+    </div>
 
 </div>
 </header>
 
+<!-- ===== BODY ===== -->
 <div class="container">
 
 <section>
 <h2>Professional Summary</h2>
 <p>
-Accomplished Assistant Manager – Engineering with over <strong>9+ years</strong> of
-hands-on experience in machine repair, preventive & corrective maintenance,
-and high-volume electronics manufacturing environments.
-Expert in leading maintenance teams, handling critical breakdowns,
-improving equipment uptime, and implementing continuous improvement
-methodologies such as <strong>TPM, KAIZEN, RCA, CAPA</strong>.
+Assistant Manager – Engineering with 9+ years of experience in machine repair,
+preventive & corrective maintenance, and high-volume electronics manufacturing.
+Expert in TPM, KAIZEN, RCA, CAPA, MTTR, MTBF, FPY improvement and
+leading maintenance teams for stable and efficient production.
 </p>
 </section>
 
@@ -170,7 +191,7 @@ methodologies such as <strong>TPM, KAIZEN, RCA, CAPA</strong>.
 <span>Root Cause Analysis (Why-Why, Fishbone)</span>
 <span>CAPA Implementation</span>
 <span>KAIZEN & POKA-YOKE</span>
-<span>5S, Safety & SOP Compliance</span>
+<span>5S & Safety Compliance</span>
 <span>Spare Parts Planning & Cost Control</span>
 </div>
 </section>
@@ -181,40 +202,38 @@ methodologies such as <strong>TPM, KAIZEN, RCA, CAPA</strong>.
 <h3>DBG Technology (I) Pvt. Ltd. – Electronics Manufacturing</h3>
 <p><strong>Assistant Manager – Machine Repair & Maintenance (July 2025 – Present)</strong></p>
 <ul>
-<li>Leading overall machine repair and maintenance operations for assembly, glue dispensing, CCD, BTB and tester lines</li>
-<li>Managing and mentoring multi-skilled maintenance teams with effective shift planning</li>
-<li>Driving preventive maintenance strategies to improve equipment reliability and uptime</li>
-<li>Monitoring daily MTTR, MTBF, FPY and downtime trends</li>
-<li>Conducting in-depth root cause analysis and implementing permanent corrective actions</li>
+<li>Leading overall machine repair and maintenance operations</li>
+<li>Managing and mentoring multi-skilled maintenance teams</li>
+<li>Driving preventive maintenance strategies to improve uptime</li>
+<li>Monitoring MTTR, MTBF, FPY and downtime trends</li>
+<li>Conducting root cause analysis and implementing permanent solutions</li>
 <li>Handling machine modifications, PLC changes and safety interlocks</li>
-<li>Supporting customer audits, internal audits and process reviews</li>
+<li>Supporting customer and internal audits</li>
 </ul>
 
 <p><strong>Senior Engineer – Machine Repair (June 2018 – June 2025)</strong></p>
 <ul>
-<li>Handled complex breakdowns during high-volume mass production</li>
-<li>Executed preventive and corrective maintenance activities</li>
-<li>Improved FPY, reduced rejection and controlled CTQ parameters</li>
-<li>Implemented KAIZEN and POKA-YOKE solutions</li>
-<li>Prepared daily, weekly and monthly machine performance reports</li>
+<li>Handled complex breakdowns during high-volume production</li>
+<li>Executed preventive and corrective maintenance</li>
+<li>Improved FPY and reduced rejection</li>
+<li>Implemented KAIZEN and POKA-YOKE</li>
 </ul>
 
 <p><strong>Engineer – Machine Repair (March 2016 – May 2018)</strong></p>
 <ul>
-<li>Provided hands-on troubleshooting support to assembly and testing lines</li>
-<li>Supported preventive maintenance execution and equipment validation</li>
-<li>Maintained detailed breakdown history and maintenance documentation</li>
+<li>Hands-on troubleshooting support to production lines</li>
+<li>Supported equipment validation and preventive maintenance</li>
+<li>Maintained detailed breakdown history and documentation</li>
 </ul>
 
 <h3>Samsung Electronics Pvt. Ltd.</h3>
 <p><strong>Service Engineer – Machine & PCBA Repair (2014 – 2016)</strong></p>
 <ul>
-<li>Diagnosed and repaired PCBA assemblies up to L4 level</li>
-<li>Performed component-level fault analysis</li>
-<li>Improved repair turnaround time through systematic troubleshooting</li>
-<li>Supported customer and internal quality audits</li>
+<li>PCBA repair up to L4 level</li>
+<li>Component-level fault analysis</li>
+<li>Improved repair turnaround time</li>
+<li>Supported quality and customer audits</li>
 </ul>
-
 </section>
 
 <section>
@@ -226,15 +245,15 @@ methodologies such as <strong>TPM, KAIZEN, RCA, CAPA</strong>.
 <li>Screw & Three-in-One Machines</li>
 <li>Air Tightness Testers</li>
 <li>Assembly & Testing Automation Equipment</li>
-<li>Jigs & Fixtures – Installation, Alignment & Modification</li>
+<li>Jigs & Fixtures – Installation & Modification</li>
 </ul>
 </section>
 
 <section>
 <h2>Education</h2>
 <ul>
-<li>Diploma – Electronics & Telecommunication Engineering (Delhi)</li>
-<li>Diploma – Mobile Engineering (Gurgaon)</li>
+<li>Diploma – Electronics & Telecommunication Engineering</li>
+<li>Diploma – Mobile Engineering</li>
 <li>12th & 10th – Board of School Education Haryana</li>
 </ul>
 </section>
@@ -255,4 +274,4 @@ methodologies such as <strong>TPM, KAIZEN, RCA, CAPA</strong>.
 </footer>
 
 </body>
-    </html>
+                                    </html>
